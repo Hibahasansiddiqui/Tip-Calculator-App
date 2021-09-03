@@ -1,20 +1,19 @@
 function calculateTip() {
-    var amount = parseInt(document.querySelector('#amt').value);
-    var people = parseInt(document.querySelector('#peop').value);
-    var servicePercent = amount * 0.25;
-    var servicePercent1 = amount * 0.20;
-    var servicePercent2 = amount * 0.15;
-    var servicePercent3 = amount * 0.10;
-    var servicePercent4 = amount * 0.05;
+    let amount = parseInt(document.querySelector('#amt').value);
+    let people = parseInt(document.querySelector('#peop').value);
+    const servicePercent = amount * 0.25;
+    const servicePercent1 = amount * 0.20;
+    const servicePercent2 = amount * 0.15;
+    const servicePercent3 = amount * 0.10;
+    const servicePercent4 = amount * 0.05;
 
+    let service = (document.querySelector('#serv').value);
 
-    var service = (document.querySelector('#serv').value);
-
-    var outStanding = servicePercent / people;
-    var good = servicePercent1 / people;
-    var normal = servicePercent2 / people;
-    var bad = servicePercent3 / people;
-    var terrible = servicePercent4 / people;
+    let outStanding = servicePercent / people;
+    let good = servicePercent1 / people;
+    let normal = servicePercent2 / people;
+    let bad = servicePercent3 / people;
+    let terrible = servicePercent4 / people;
 
     if (amount == '' || service == 0) {
 
